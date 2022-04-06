@@ -8,11 +8,12 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="146dp"
-        android:layout_height="49dp"
-        android:text="Button"
+        android:layout_width="144dp"
+        android:layout_height="71dp"
+        android:onClick="getHorizontalScreen"
+        android:text="Actual Products"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="619dp" />
+        tools:layout_editor_absoluteY="113dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

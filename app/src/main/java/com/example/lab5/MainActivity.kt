@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -24,10 +23,17 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
         if (id == R.id.mybutton) {
-            val intent = Intent(this, ScrollViewDisplay::class.java).apply {}
+            val intent = Intent(this, ScrollViewDisplayActivity::class.java).apply {}
             startActivity(intent)
         }
         return super.onOptionsItemSelected(item)
     }
+
+    fun getHorizontalScreen(view: View) {
+        val intent = Intent(this, HorizontalScreenActivity::class.java).apply {}
+        startActivity(intent)
+    }
+
+
 
 }

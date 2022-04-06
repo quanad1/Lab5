@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab5">
         <activity
-            android:name=".ScrollViewDisplay" android:configChanges="orientation|screenSize"
+            android:name=".HorizontalScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollViewDisplayActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
