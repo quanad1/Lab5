@@ -12,4 +12,6 @@ class HorizontalScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_horizontal_screen)
     }
 
+
+
 }
