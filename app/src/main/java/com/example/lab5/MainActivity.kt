@@ -19,4 +19,15 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+        if (id == R.id.mybutton) {
+            val intent = Intent(this, ScrollViewDisplay::class.java).apply {}
+            startActivity(intent)
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 }
